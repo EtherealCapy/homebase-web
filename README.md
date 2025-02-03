@@ -1,6 +1,6 @@
 # Web Homebase
 
-Instrucciones para levantar la web.
+## Instrucciones para levantar la web.
 
 Hay que instalar el manejador de paquetes bun con este comando
 
