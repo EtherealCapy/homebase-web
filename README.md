@@ -1,5 +1,8 @@
 # Memoria de proyecto
 
+</br>
+</br>
+
 > Explicación de la idea del proyecto
 
 <p>Nuestra propuesta de proyecto es desarrollar una aplicación móvil destinada a mejorar la convivencia entre compañeros de piso o miembros de una familia. Con esta herramienta buscamos promover una gestión organizada de las tareas domésticas y las finanzas, con el objetivo de reducir los conflictos y mejorar la calidad de vida en el hogar.</p></br>
@@ -31,11 +34,11 @@
 
 > Diagramas
 
-<h5>Diagrama de la base de datos:</h5></br>
+<h4>Diagrama de la base de datos:</h4></br>
 <img src=./src/readme-img/diagrama-bd.png>
 </br>
 
-<h5>Diagrama de casos de uso:</h5></br>
+<h4>Diagrama de casos de uso:</h4></br>
 <img src=./src/readme-img/diagrama-casos-uso.png>
 <img src=./src/readme-img/caso1.png>
 <img src=./src/readme-img/caso2.png>
@@ -51,4 +54,22 @@
 </br>
 
 > Página web
+
+<h4>Mockup</h4>
+</br>
+
+<h4>Paleta de colores</h4>
+<img src=./src/readme-img/paleta.png>
+</br>
+
+<h4>Logo</h4>
+<img src=./src/readme-img/logo.png>
+</br>
+
+<h4>Funcionalidades web</h4>
+
+</br>
+</br>
+
+> Roadmap
 
