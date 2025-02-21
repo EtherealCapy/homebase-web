@@ -75,16 +75,16 @@
 > Roadmap
 <p>*Esta es una esquematización de la organización del proyecto</p>
 <h5>Tareas de Back End</h5>
-- Creación de endpoints
-- Implementación validación con JWT
+<li>Creación de endpoints</li> 
+<li>Implementación validación con JWT</li>
 </br>
 <h5>Tareas de Front End</h5>
-- Creación de vistas
-- Manejo de la información del back end
+<li>Creación de vistas</li>
+<li>Manejo de la información del back end</li>
 </br>
 <h5>Tareas Web</h5>
-- Investigación previa
-- Diseño del mockup
-- Maquetación
+<li>Investigación previa</li>
+<li>Diseño del mockup</li>
+<li>Maquetación</li>
 
 
