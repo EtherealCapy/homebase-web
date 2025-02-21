@@ -53,9 +53,10 @@
 </br>
 </br>
 
-> Página web
+> Diseño de la aplicación
 
 <h4>Mockup</h4>
+<a href="https://www.figma.com/design/vL2mp9Lg2LjPUimGYjFpyr/HomeBase?node-id=0-1&t=UDQ0XHQ9j8CGH25f-1">Enlace a figma</a>
 </br>
 
 <h4>Paleta de colores</h4>
@@ -66,10 +67,24 @@
 <img src=./src/readme-img/logo.png>
 </br>
 
-<h4>Funcionalidades web</h4>
-
+<h4>Funcionalidades de la aplicación</h4>
+<img src=./src/readme-img/requisitos.png>
 </br>
 </br>
 
 > Roadmap
+<p>*Esta es una esquematización de la organización del proyecto</p>
+<h5>Tareas de Back End</h5>
+- Creación de endpoints
+- Implementación validación con JWT
+</br>
+<h5>Tareas de Front End</h5>
+- Creación de vistas
+- Manejo de la información del back end
+</br>
+<h5>Tareas Web</h5>
+- Investigación previa
+- Diseño del mockup
+- Maquetación
+
 
