@@ -1,11 +1,13 @@
+import Header from '@components/Header';
+
 const TopContainer = () => {
 
     //TODO: Poner imagen de fondo al div principal
 
     return(
-        <div>
+        <div className='bg-black'>
 
-            {/* HEADER */}
+            <Header/>
 
             {/* TÍTULO */}
             
