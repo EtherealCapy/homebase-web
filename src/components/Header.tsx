@@ -1,8 +1,11 @@
 
 const Header = () => {
     return(
-        <div>
-            <button></button>
+        <div className="flex">
+            <button>INICIO</button>
+            <button>FUNCIONALIDADES</button>
+            <button>DESCARGA</button>
+            <button>CONTACTO</button>
         </div>
     );
 }
