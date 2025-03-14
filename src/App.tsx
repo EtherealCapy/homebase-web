@@ -1,13 +1,15 @@
+import TopContainer from '@components/TopContainer';
 
 const App = () => {
   return (
     <div>
-      <h1>App</h1>
+      <TopContainer/>
+      <h1>hola</h1>
     </div>
     
     
       
-  )
+  );
 }
 
 export default App;
