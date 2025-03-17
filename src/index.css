@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+:root{
+    --primary-color: #00BCE7;
+    --secondary-color: #191C2F;
+}
+
+.my-blur{
+    filter: blur(2px);
+}
+
+.title-font{
+    font-size: clamp(5rem, 17.5vw, 50rem);
+    font-family: "Anton", sans-serif;
+}
+
+.custom-bg{
+    background-blend-mode: color-burn;
+    background-color: var(--secondary-color);
+}
