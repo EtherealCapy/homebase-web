@@ -13,6 +13,7 @@ export default defineConfig({
       "@": "/src",
       "@components": "/src/components",
       "@interfaces": "/src/interfaces",
+      "@assets": "/src/assets",
     },
   },
 })
