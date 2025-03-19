@@ -6,12 +6,13 @@
 }
 
 .my-blur{
-    filter: blur(2px);
+    filter: blur(1.5px);
 }
 
 .title-font{
     font-size: clamp(5rem, 17.5vw, 50rem);
     font-family: "Anton", sans-serif;
+    cursor: default;
 }
 
 .custom-bg{
