@@ -5,7 +5,7 @@ const Header = () => {
 
     return(
         <div className="sticky top-0 bg-transparent z-50 hidden md:block">
-            <div className="flex justify-center space-x-6 py-4">
+            <div className="flex justify-center space-x-15 py-4">
                 {['INICIO', 'FUNCIONALIDADES', 'DESCARGA', 'CONTACTO'].map((text, index) => (
                     <button
                         key={index}
