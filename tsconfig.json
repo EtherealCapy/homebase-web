@@ -12,6 +12,9 @@
       "@interfaces/*": [
         "./src/interfaces/*"
       ],
+      "@assets/*": [
+        "./src/assets/*"
+      ]
     }
   }
 }
