@@ -20,15 +20,13 @@ const Content = () => {
             const content = contentRef.current;
             
             if (direction === 1 && !isContentUp) { // Scroll hacia abajo
-                // Mueve el contenido hacia arriba rápidamente
                 content.style.transform = 'translateY(-100vh)';
                 content.style.transition = 'transform 1s ease-out';
-                isContentUp = true; // Marca que el contenido está arriba
+                isContentUp = true; 
             } else if (direction === -1 && isContentUp) { // Scroll hacia arriba
-                // Mueve el contenido hacia abajo rápidamente
                 content.style.transform = 'translateY(0)';
                 content.style.transition = 'transform 1s ease-out';
-                isContentUp = false; // Marca que el contenido está abajo
+                isContentUp = false; 
             }
         };
 
@@ -42,7 +40,6 @@ const Content = () => {
         };
         requestAnimationFrame(raf);
 
-        // Limpia el efecto al desmontar el componente
         return () => {
             lenis.off('scroll', handleScroll);
             lenis.destroy();
