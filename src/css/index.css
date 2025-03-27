@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@import "./satoshi.css";
 
 :root{
     --primary-color: #00BCE7;
     --secondary-color: #191C2F;
+    --color-white: #FFFFFF;
 }
 
 .my-blur{
@@ -21,7 +23,10 @@
 }
 
 .description{
-    background-color: #191C2F;
+    background-color: var(--primary-color);
+    min-height: calc(100vh /1.618);
+    height: auto;
+    padding: 10vh 15vw 10vh 15vw;
 }
 
 .sombra{
@@ -34,3 +39,10 @@
     height: 50vh;
     background: linear-gradient(to top, var(--secondary-color), transparent);
 } */
+
+.title{
+    color: var(--color-white);
+    font-family: 'Satoshi-Bold', sans-serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    line-height: 1.2em;
+}

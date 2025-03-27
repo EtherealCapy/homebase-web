@@ -14,6 +14,8 @@ export default defineConfig({
       "@components": "/src/components",
       "@interfaces": "/src/interfaces",
       "@assets": "/src/assets",
+      "@fonts": "/src/assets/fonts/satoshi",
+      "@css": "/src/css"
     },
   },
 })
