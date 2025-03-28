@@ -1,39 +1,49 @@
 import { useEffect, useRef } from 'react';
 import Lenis from '@studio-freight/lenis';
 import Description from './Description';
+import Carousel from './Carousel';
 
 
 const Content = () => {
     const contentRef = useRef(null);
 
     useEffect(() => {
-        // Inicializa Lenis
         const lenis = new Lenis({
-            duration: 0.8, // Duración del scroll suave (no es crítico en este caso)
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Curva de aceleración
+            duration: 0.8,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         });
 
         let isContentUp = false;
 
-        // Función para manejar el scroll
-        const handleScroll = ({ scroll, direction }) => {
+        const handleScroll = ({ scroll, direction, velocity }) => {
             const content = contentRef.current;
             
-            if (direction === 1 && !isContentUp) { // Scroll hacia abajo
-                content.style.transform = 'translateY(-100vh)';
+            if (direction === 1 && !isContentUp) {
+                content.style.transform = 'translateY(calc(-100vh + 100px))';
                 content.style.transition = 'transform 1s ease-out';
-                isContentUp = true; 
-            } else if (direction === -1 && isContentUp) { // Scroll hacia arriba
-                content.style.transform = 'translateY(0)';
-                content.style.transition = 'transform 1s ease-out';
-                isContentUp = false; 
+                isContentUp = true;
+                return;
+            }
+        
+            if (direction === -1 && isContentUp) {
+                content.style.transition = 'none';
+            
+                const inertia = velocity * 8; // ajustar multiplicador para cambiar la velocidad
+                const newPosition = Math.min(0, scroll - inertia);
+                
+                content.style.transform = `translateY(calc(-100vh + 100px + ${-newPosition}px))`;
+                
+                if (scroll <= 5) {
+                    const snapDuration = Math.min(0.4, Math.abs(velocity) * 0.5); 
+                    content.style.transition = `transform ${snapDuration}s cubic-bezier(0.2, 0.7, 0.3, 1)`;
+                    content.style.transform = 'translateY(0)';
+                    isContentUp = false;
+                }
             }
         };
 
-        // Escucha el evento de scroll
         lenis.on('scroll', handleScroll);
 
-        // Función para actualizar Lenis en cada frame
         const raf = (time) => {
             lenis.raf(time);
             requestAnimationFrame(raf);
@@ -49,6 +59,7 @@ const Content = () => {
     return (
         <div ref={contentRef} className="my-black z-15 relative w-full h-screen" >
             <Description />
+            <Carousel />
         </div>
     );
 };

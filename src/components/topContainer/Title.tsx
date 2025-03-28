@@ -1,8 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
+import DownloadBtns from './DownloadBtns';
 
 const Title = () => {
     const lettersRef = useRef([]);
+
+    const [visibleButtons, setVisibleButtons] = useState(false);
 
     useEffect(() => {
         const letters = lettersRef.current;
@@ -36,12 +39,23 @@ const Title = () => {
                                 duration: 0,
                                 stagger: 0.1,
                                 ease: 'power2.out',
+                                onComplete: () => {
+                                    gsap.to(letters, {
+                                        y: -100, 
+                                        duration: 0.4,
+                                        ease: 'sine.out', 
+                                        onComplete: () => {
+                                            setVisibleButtons(true);
+                                        },
+                                    });
+                                },
                             });
                         },
                     }
                 );
             },
         });
+        
 
         letters.forEach((letter) => {
             letter.addEventListener('mouseenter', () => {
@@ -70,17 +84,24 @@ const Title = () => {
     }, []);
 
     return (
-        <div className="flex justify-center items-center h-screen">
-            <div className="flex">
-                {'HOMEBASE'.split('').map((letter, index) => (
-                    <span
-                        key={index}
-                        ref={(el) => (lettersRef.current[index] = el)}
-                        className="text-white font-bold title-font"
-                    >
-                        {letter}
-                    </span>
-                ))}
+        <div>
+            <div className="flex flex-col justify-center items-center h-screen">
+                <div className="flex">
+                    {'HOMEBASE'.split('').map((letter, index) => (
+                        <span
+                            key={index}
+                            ref={(el) => (lettersRef.current[index] = el)}
+                            className="text-white font-bold title-font"
+                        >
+                            {letter}
+                        </span>
+                    ))}
+                </div>
+                {visibleButtons && (
+                    //crear un contenedor para los botones, y los botones
+                    <DownloadBtns/>
+                )}
+                
             </div>
         </div>
     );
