@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "./satoshi.css";
+
+:root{
+    --primary-color: #00BCE7;
+    --secondary-color: #191C2F;
+    --color-white: #FFFFFF;
+}
+
+.my-blur{
+    filter: blur(1.5px);
+}
+
+.title-font{
+    font-size: clamp(5rem, 17.5vw, 50rem);
+    font-family: "Anton", sans-serif;
+    cursor: default;
+}
+
+.custom-bg{
+    background-blend-mode: color-burn;
+    background-color: var(--secondary-color);
+}
+
+.description{
+    background-color: var(--primary-color);
+    min-height: calc(100vh /1.618);
+    height: auto;
+    padding: 10vh 15vw 10vh 15vw;
+}
+
+.sombra{
+    box-shadow: 0px -20px 20px 0px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+/* .fade{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to top, var(--secondary-color), transparent);
+} */
+
+.title{
+    color: var(--color-white);
+    font-family: 'Satoshi-Bold', sans-serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    line-height: 1.2em;
+}
+
+.carousel{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+
+.downloadbtn{
+    height: 5em;
+    width: 13.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.mockUp1, .mockUp2, .mockUp3 {
+    width: 65vw;
+    height: 95vh;
+    background-color: #00BCE7;
+    margin: 0 auto; /* Centrado horizontal */
+    border-radius: 40px;
+    transform-origin: center center; /* Para que el zoom sea desde el centro */
+    will-change: transform, opacity; /* Optimización para animaciones */
+}
+
+@media (max-width: 768px) {
+    .mockUp1, .mockUp2, .mockUp3 {
+        width: 90vw;
+        height: auto;
+        aspect-ratio: 1 / 1; /* Cuadrado o casi cuadrado */
+        max-height: 80vh; /* Evita que sean demasiado altas */
+    }
+}
+
+.mockUp1 {
+    margin-top: 20vh;
+    background-image: url('@assets/mockup1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.mockUp2 {
+    background-image: url('@assets/mockup2.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.mockUp3 {
+    background-image: url('@assets/mockup3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
