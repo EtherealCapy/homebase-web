@@ -1,6 +1,5 @@
 import Header from '@/components/topContainer/Header';
 import Title from '@/components/topContainer/Title';
-import fondo4 from '@assets/fondo4.jpg';
 import fondo1 from '@assets/fondo1.jpg';
 
 const TopContainer = () => {

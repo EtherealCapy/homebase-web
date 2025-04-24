@@ -20,6 +20,11 @@
 .custom-bg{
     background-blend-mode: color-burn;
     background-color: var(--secondary-color);
+
+}
+
+.content{
+    background: linear-gradient(to top, var(--secondary-color), transparent);
 }
 
 .description{
@@ -27,6 +32,9 @@
     min-height: calc(100vh /1.618);
     height: auto;
     padding: 10vh 15vw 10vh 15vw;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 15px;
 }
 
 .sombra{

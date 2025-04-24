@@ -4,8 +4,8 @@ import Description from './Description';
 
 const Content = () => {
     return (
-        <div className="my-black z-15 relative w-full h-screen">
-            <Description />
+        <div className="my-black z-15 relative w-full h-screen content">
+            <Description /> 
             <Carousel />
         </div>
     );
