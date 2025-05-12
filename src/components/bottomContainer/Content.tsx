@@ -1,7 +1,9 @@
-import { useRef, useEffect } from 'react';
 import Carousel from './Carousel';
 import Description from './Description';
 import SliderContainer from './SliderContainer';
+import Download from './Download';
+import Footer from './Footer';
+
 
 const Content = () => {
     return (
@@ -9,6 +11,8 @@ const Content = () => {
             <Description /> 
             <Carousel />
             <SliderContainer />
+            <Download/>
+            <Footer/>
         </div>
     );
 };

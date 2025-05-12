@@ -58,6 +58,7 @@
     align-items: center;
     gap: 15vh;
     padding-bottom: 10vh;
+
 }
 
 .downloadbtn{
@@ -241,3 +242,32 @@
         transform: translateY(-50%) scaleX(-1) translateX(-20%) 
     }
 }
+
+.download{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color:#191C2F;
+    color: #FFFFFF;
+    padding-bottom: 15vh;
+}
+
+h2{
+    font-family: 'Satoshi-Bold', sans-serif;
+    font-size: 4em;
+    margin-bottom: 12vh;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    color: #FFFFFF;
+    border-top: 2px solid gray;
+    padding-bottom: 5em;
+    padding-top: 2em;
+}
+
