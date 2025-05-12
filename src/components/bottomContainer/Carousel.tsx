@@ -9,7 +9,6 @@ const Carousel = () => {
     const mockUpRefs = [useRef(null), useRef(null), useRef(null)];
 
     useEffect(() => {
-        // Configuración inicial
         mockUpRefs.forEach(ref => {
             if (ref.current) {
                 gsap.set(ref.current, {
@@ -21,14 +20,12 @@ const Carousel = () => {
         });
 
         const ctx = gsap.context(() => {
-            // Pequeño delay para asegurar el renderizado
             setTimeout(() => {
                 mockUpRefs.forEach(ref => {
                     if (!ref.current) return;
 
                     const element = ref.current;
 
-                    // Animación única y fluida
                     gsap.fromTo(element,
                         {
                             scale: 0.5,
@@ -47,7 +44,6 @@ const Carousel = () => {
                         }
                     );
 
-                    // Animación de salida
                     gsap.fromTo(element,
                         {
                             scale: 1,
