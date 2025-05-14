@@ -6,11 +6,7 @@ const App = () => {
     <div>
       <TopContainer/>
       <Content/>
-      <h1>hola</h1>
     </div>
-    
-    
-      
   );
 }
 
