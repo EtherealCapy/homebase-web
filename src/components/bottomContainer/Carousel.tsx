@@ -71,7 +71,7 @@ const Carousel = () => {
     }, []);
 
     return (
-        <div className="carousel" ref={carouselRef}>
+        <section id="utilities" className="carousel" ref={carouselRef}>
             {mockUpRefs.map((ref, index) => (
                 <div 
                     key={`mockUp${index+1}`}
@@ -80,7 +80,7 @@ const Carousel = () => {
                     style={{ willChange: 'transform' }}
                 />
             ))}
-        </div>
+        </section>
     );
 };
 

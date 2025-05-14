@@ -91,19 +91,19 @@
 
 .mockUp1 {
     margin-top: 20vh;
-    background-image: url('@assets/mockup1.jpg');
+    background-image: url('@assets/mockup1.png');
     background-size: cover;
     background-position: center;
 }
 
 .mockUp2 {
-    background-image: url('@assets/mockup2.webp');
+    background-image: url('@assets/mockup2.png');
     background-size: cover;
     background-position: center;
 }
 
 .mockUp3 {
-    background-image: url('@assets/mockup3.jpg');
+    background-image: url('@assets/mockup3.png');
     background-size: cover;
     background-position: center;
 }

@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/f
 
 const Footer = () => {
     return(
-        <div className="footer">
+        <section id='contact' className="footer">
             <div className="flex items-center gap-2">
                 <img src={logo} alt="Logo" style={{ width: '50px', height: '30px' }} />
                 <p className="text-gray-600 hover:text-white">© 2025 Homebase App</p>
@@ -17,7 +17,7 @@ const Footer = () => {
                     <FaTwitter size={30} />
                 </a>
             </div>
-        </div>
+        </section>
     );
 }
 
