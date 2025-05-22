@@ -5,6 +5,7 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     react(),
     tailwindcss(),
@@ -15,7 +16,7 @@ export default defineConfig({
       "@components": path.resolve(__dirname, 'src/components'),
       "@interfaces": path.resolve(__dirname, 'src/interfaces'),
       "@assets": path.resolve(__dirname, 'src/assets'),
-      "@fonts": path.resolve(__dirname, 'src/assets/fonts/satoshi'),
+      "@fonts": path.resolve(__dirname, 'src/assets/fonts'),
       "@css": path.resolve(__dirname, 'src/css'),
     },
   },
